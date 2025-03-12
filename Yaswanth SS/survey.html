@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <h1>Customer Feedback Survey</h1>
+    <p>Please fill out the survey below to help us improve our services.</p>
+
+    <form action="/submit_survey" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+
+        <p>How satisfied are you with our service?</p>
+        <input type="radio" id="very-satisfied" name="satisfaction" value="Very Satisfied">
+        <label for="very-satisfied">Very Satisfied</label><br>
+        <input type="radio" id="satisfied" name="satisfaction" value="Satisfied">
+        <label for="satisfied">Satisfied</label><br>
+        <input type="radio" id="neutral" name="satisfaction" value="Neutral">
+        <label for="neutral">Neutral</label><br>
+        <input type="radio" id="dissatisfied" name="satisfaction" value="Dissatisfied">
+        <label for="dissatisfied">Dissatisfied</label><br><br>
+
+        <p>What services do you use most often?</p>
+        <input type="checkbox" id="service1" name="services" value="Web Hosting">
+        <label for="service1">Web Hosting</label><br>
+        <input type="checkbox" id="service2" name="services" value="SEO">
+        <label for="service2">SEO</label><br>
+        <input type="checkbox" id="service3" name="services" value="Content Writing">
+        <label for="service3">Content Writing</label><br>
+        <input type="checkbox" id="service4" name="services" value="App Development">
+        <label for="service4">App Development</label><br><br>
+
+        <label for="comments">Any other feedback or suggestions:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
